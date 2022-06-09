@@ -14,8 +14,14 @@
         </div>
       <h1>STEPHANIE GINTING</h1>
       <p>Computer Science student at Cornell University</p>
-      <!-- commented code below came with initial setup, not sure if needed for wk2-3 so I left commented out -->
-      <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p> -->
+      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <p>Click this button for a message!</p>
+      <div style="text-align:center;">
+        <button onclick="showMessage();">
+        get message
+        </button>
+        <p id="message-container"></p>
+    </div>
       <p>Click here to learn a random fact about me:</p>
       <div style="text-align:center;"><button onclick="addRandomFact()">FACTory</button></div>
       <div id="fact-container" style="text-align:center; color:white; font-family: poppins"></div>
