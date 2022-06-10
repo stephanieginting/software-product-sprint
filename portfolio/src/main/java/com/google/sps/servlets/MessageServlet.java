@@ -12,8 +12,27 @@ public class MessageServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    response.setContentType("text/html;");
-    response.getWriter().println("Don't forget to drink water today :)");
+    String json = newJson();
+    // Send the JSON as the response
+    response.setContentType("application/json;");
+    response.getWriter().println(json);
+  }
+
+    /**
+   * Creates a new Json 
+   */
+  private String newJson() {
+    String json = "{";
+    json += "\"message1\": ";
+    json += "\"Don't forget to drink water today\"";
+    json += ", ";
+    json += "\"message2\": ";
+    json += "\"Sleep at reasonable hours >:0\"";
+    json += ", ";
+    json += "\"message3\": ";
+    json += "\"Go outside!\"";
+    json += "}";
+    return json;
   }
 }
 
