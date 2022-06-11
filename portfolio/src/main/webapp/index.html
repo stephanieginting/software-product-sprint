@@ -14,17 +14,36 @@
         </div>
       <h1>STEPHANIE GINTING</h1>
       <p>Computer Science student at Cornell University</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <p>Click here to learn a random fact about me:</p>
+      <div style="text-align:center;"><button onclick="addRandomFact()">FACTory</button></div>
+      <div id="fact-container" style="text-align:center; color:white; font-family: poppins"></div>
+    </div>
+    <div id="form" style="text-align:center;">
+        <form action="/comment" method="POST">
+            <p><b>Questions? Comments? Concerns?</b></p>
+            <p>Leave a note!</p>
+            <div style="text-align:center;">
+            <p vertical-align="top">
+                <label for="email">Email:</label>
+                <textarea id="email" name="email">yourname@example.com</textarea>
+            </p>
+            </div>
+            <p vertical-align="top">
+                <label for="note-input">Note:</label>
+                <textarea id="note-input" name="note-input"></textarea>
+            </p>
+            <input type="submit" />
+            </div>
+          </form>          
+    </div>
+  </body>
+</html>
+
+<!-- code commented below was part of week2 steps 2-3 but I didn't want to keep it in my portfolio -->
+      <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click this button for a message!</p>
       <div style="text-align:center;">
         <button onclick="showMessage();">
         get message
         </button>
-        <p id="message-container"></p>
-    </div>
-      <p>Click here to learn a random fact about me:</p>
-      <div style="text-align:center;"><button onclick="addRandomFact()">FACTory</button></div>
-      <div id="fact-container" style="text-align:center; color:white; font-family: poppins"></div>
-    </div>
-  </body>
-</html>
+        <p id="message-container"></p> -->
