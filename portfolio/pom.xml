@@ -38,6 +38,8 @@
       <artifactId>jetty-annotations</artifactId>
       <version>${jetty.version}</version>
     </dependency>
+
+    <!-- Gson -->
     <dependency>
         <groupId>com.google.code.gson</groupId>
         <artifactId>gson</artifactId>
@@ -47,8 +49,16 @@
             <groupId>org.json</groupId>  
             <artifactId>json</artifactId>  
             <version>20180813</version>  
-    </dependency>  
+    </dependency>
+
+    <!-- Translate -->
+    <dependency>
+    <groupId>com.google.cloud</groupId>
+    <artifactId>google-cloud-translate</artifactId>
+    <version>1.70.0</version>
+    </dependency>
   </dependencies>
+
 
   <build>
     <plugins>
