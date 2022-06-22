@@ -3,6 +3,14 @@
   margin-right: auto;
   margin-top: 110px;
   width: 650px;
+  margin-bottom: 50px;
+}
+
+#form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    margin-bottom: 110px;
 }
 
 #fact-container {
@@ -25,10 +33,44 @@ p {
     color: #ffffff;
   }
 
+label {
+    font-family: poppins;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
 body {
     background-image: url('images/bg.JPG');
     background-attachment: fixed;
     background-size: cover;
+}
+
+button {
+    background-color: gainsboro;
+    border: none;
+    color: black;
+    border: 2px solid gainsboro;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: poppins;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: white;
+    color: gainsboro;
+    border: 2px solid gainsboro;
+  }
+
+textarea {
+    resize: none;
+    width: 250px;
+    height: 50px;
+    font-family: poppins;
 }
   
 .fade-in-image {

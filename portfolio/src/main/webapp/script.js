@@ -26,3 +26,18 @@ function addRandomFact() {
   const factContainer = document.getElementById('fact-container');
   factContainer.innerText = fact;
 }
+
+async function showMessage() {
+    const responseFromServer = await fetch('/message');
+    const jsonObject = await responseFromServer.json();
+    const textFromResponse = getRandom(jsonObject);
+  
+    const messageContainer = document.getElementById('message-container');
+    messageContainer.innerText = textFromResponse;
+  }
+
+function getRandom(json) {
+    const messages = [json.message1, json.message2, json.message3];
+    const rand_num = Math.floor(Math.random() * 3);
+    return messages[rand_num];
+}
